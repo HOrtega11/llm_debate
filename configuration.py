@@ -1,0 +1,22 @@
+
+MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
+
+TEMPERATURE = 0.3
+MAX_TOKENS = 512
+
+NUM_DEBATE_ROUNDS = 3
+SELF_CONSISTENCY_SAMPLES = 9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
