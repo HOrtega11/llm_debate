@@ -31,7 +31,7 @@ Setup instructions
 4) set API key
 5) modify experiment setting in configuration.py if desired
 6) to run the full experiment, run "python main.py" on the terminal
-7) to the Streamlit interface for interactive use, run "streamlit run debate_UI.py" on the terminal
+7) to run the Streamlit interface for interactive use, run "streamlit run debate_UI.py" on the terminal
 
 
 
