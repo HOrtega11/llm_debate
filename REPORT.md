@@ -16,18 +16,24 @@ The dataset used consisted of 100 yes/no commonsense QA from the StrategyQA data
 Performing a qualitative analysis on several debate transcripts reveals what went well and what failed during the debate. Most transcripts tended to have early consensus thus had no debate. This is evidenced by the consensus rate of 0.95. They tended to have similar reasoning as well in spite of a higher temperature value. This was also found to be the case when both debaters incorrectly assume an answer. An example is found below where both debaters were independently correct:
 
 Question: *"Do German Shepherds worry about the Abitur?"*
+
 Debater A initial response: *“German Shepherds, as dogs, do not possess the cognitive ability to understand human concepts such as the Abitur, which is a German school leaving certificate. They do not worry about academic matters, as their concerns are primarily related to their immediate environment and needs.”*
+
 Debater B initial response: *“German Shepherds, as dogs, do not possess the cognitive ability to understand or worry about human educational systems like the Abitur, which is a secondary school leaving certificate in Germany. Their concerns are primarily related to basic needs such as food, safety, and companionship.”*
 
 An interesting observation that may have resulted in significantly decreased accuracy was a lack of meaningful argument. The debaters tend to repeat their own argument and the other’s argument thus resulting in shallow arguments. In this case below, the answer was correct but the lack of meaningful argument is highlighted. 
 
 Question: *“Did number of Imams Reza Shah believed in exceed number of Jesus's disciples?”
+
 Debater B round 2: “Debater A's argument attempts to shift the focus from a straightforward numerical comparison to the cultural significance of the figures involved. However, the original question explicitly asks whether the number of Imams believed by Reza Shah exceeds the number of Jesus's disciples. Both numbers are equal, with twelve Imams in Shia Islam and twelve disciples of Jesus, making any assertion that one exceeds the other factually incorrect… Thus, the answer remains 'no' as the foundational premise of the argument is based on a misinterpretation of the question's intent and a conflation of numerical equality with cultural weight.”*
+
 Debater B round 3: *“Debater A's argument continues to divert from the straightforward numerical comparison posed by the question. While they emphasize the cultural significance and implications of belief regarding the twelve Imams in Shia Islam, this does not change the fundamental fact that both the number of Imams and the number of Jesus's disciples are equal—twelve… Therefore, the answer remains 'no' as the comparison is strictly a matter of numerical equality, not cultural or religious significance.”*
         
 A final example shows when direct QA was correct but the debate + judge was incorrect. The judge was persuaded by an incorrect interpretation
+
 Question: *“Would Donald Duck be allowed into most grocery stores?”*
-DirectQA: *“Donald Duck is a cartoon character and not a real person. Grocery stores typically have policies that allow entry only to humans or service animals… Overall, Debater A is more persuasive due to their focus on customer engagement and the positive aspects of allowing costumed characters, despite some weaknesses in their evidence. Therefore, I conclude that Donald Duck would be allowed into most grocery stores, especially during promotional events.”*
+
+Judge: *“Donald Duck is a cartoon character and not a real person. Grocery stores typically have policies that allow entry only to humans or service animals… Overall, Debater A is more persuasive due to their focus on customer engagement and the positive aspects of allowing costumed characters, despite some weaknesses in their evidence. Therefore, I conclude that Donald Duck would be allowed into most grocery stores, especially during promotional events.”*
 
 
 ## Prompt Engineering
