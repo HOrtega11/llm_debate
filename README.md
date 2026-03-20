@@ -1,11 +1,13 @@
-# llm_debate
-Building Adversarial Multi-Agent Reasoning Systems
+## llm_debate
+## Building Adversarial Multi-Agent Reasoning Systems
  
-Overview
+# Overview
 
 This project builds and evaluates a multi-agent debate + judge pipeline where two LLM agents argue opposing sides of a question and a third LLM serves as the judge over multiple rounds. The project also compares three systems. First, the debate. Second, a direct QA where a single LLM answers the question directly with zero-shot Chain of Thought (COT) prompting without debating. And third, self consistency where N answers are sampled (N matches the total LLM calls in the debate) from a single model and take the majority vote. 
 
 This project also contains the modular code along with the configuration of hyperparameters, prompt templates, experiment logging, statistical evaluation, and a Streamlit web UI.
+
+# Modular code files
 
 main.py: runs all experiments
 
@@ -42,7 +44,7 @@ judge_confidence_hist: judge confidence results histrogram
 
 
 
-Setup instructions
+# Setup instructions
 1) clone the repository
 2) create a virtual environment
 3) install dependencies
