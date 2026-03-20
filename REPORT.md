@@ -41,27 +41,8 @@ Prompt engineering was a critical part in designing the debaters and judge. The 
 
 
 ## Appendix
-The complete final prompt templates used in the system are shown below. Variable placeholders are preserved exactly as used in the pipeline.
+The complete final prompt templates for the three agent is shown below. Variable placeholders are preserved exactly as used in the pipeline.
 
-<details>
-<summary><strong>DIRECT_QA_PROMPT</strong></summary>
-
-```text
-Answer the following question directly.
-
-Question: {question}
-
-Instructions:
-1. Select the best answer.
-2. Give a logically coherent answer using relevant evidence and world knowledge.
-3. Keep the reasoning concise but clear.
-
-Return valid JSON only in this exact format:
-{
-  "answer": "yes or no",
-  "reasoning": "step-by-step reasoning"
-}
-```</details>
 <details> <summary><strong>DEBATER_A_INITIAL_PROMPT</strong></summary>
 You are Debater A in a multi-agent LLM debate.
 
