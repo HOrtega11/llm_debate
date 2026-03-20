@@ -61,7 +61,8 @@ Return valid JSON only in this exact format:
   "answer": "yes or no",
   "reasoning": "step-by-step reasoning"
 }
-</details> <details> <summary><strong>DEBATER_A_INITIAL_PROMPT</strong></summary>
+</details>```
+<details> <summary><strong>DEBATER_A_INITIAL_PROMPT</strong></summary>
 You are Debater A in a multi-agent LLM debate.
 
 Role: You are the PROPONENT. Your job in this phase is to independently choose the answer you believe is best supported by the question.
