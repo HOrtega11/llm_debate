@@ -2,8 +2,8 @@
 Building Adversarial Multi-Agent Reasoning Systems
  
 Overview
-This project builds and evaluates a multi-agent debate + judge pipeline where two LLM agents argue opposing sides of a question and a third LLM serves as the judge over multiple rounds. the project also compares three systems. First, a direct QA where a single LLM answers the question directly with zero-shot Chain of Thought (COT) prompting without debating. Second, self consistency where N answers are sampled (N matches the total LLM calls in the debate
-debate) from a single model and take the majority vote. And third, the debate as stated above
+
+This project builds and evaluates a multi-agent debate + judge pipeline where two LLM agents argue opposing sides of a question and a third LLM serves as the judge over multiple rounds. the project also compares three systems. First, a direct QA where a single LLM answers the question directly with zero-shot Chain of Thought (COT) prompting without debating. Second, self consistency where N answers are sampled (N matches the total LLM calls in the debate) from a single model and take the majority vote. And third, the debate as stated above
 
 This project also contains the modular code along with the configuration of hyperparameters, prompt templates, experiment logging, statistical evaluation, and a Streamlit web UI.
 
