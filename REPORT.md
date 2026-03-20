@@ -206,7 +206,7 @@ Return valid JSON only in this exact format:
   "verdict": "yes or no",
   "confidence": 1
 }
-</details> ```
+</details>
 
 
 
