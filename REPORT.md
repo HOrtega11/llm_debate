@@ -36,6 +36,20 @@ The dataset used consisted of 100 yes/no commonsense QA from the StrategyQA data
 | --- | --- | --- | --- | --- |
 | 100 | 95 | 0 | 0.95 | 0.0 |
 
+
+### Accuracy Comparison
+
+![Accuracy Plot](images/accuracy.png)
+
+### Debater Consensus 
+
+![Accuracy Plot](images/accuracy.png)
+
+### Judge Confidence
+
+![Accuracy Plot](images/accuracy.png)
+
+
 ## Analysis
 Performing a qualitative analysis on several debate transcripts reveals what went well and what failed during the debate. Most transcripts tended to have early consensus thus had no debate. This is evidenced by the consensus rate of 0.95. They tended to have similar reasoning as well in spite of a higher temperature value. This was also found to be the case when both debaters incorrectly assume an answer. An example is found below where both debaters were independently correct:
 
