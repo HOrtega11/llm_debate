@@ -39,15 +39,15 @@ The dataset used consisted of 100 yes/no commonsense QA from the StrategyQA data
 
 ### Accuracy Comparison
 
-![Accuracy Plot](images/accuracy.png)
+![Accuracy Plot](accuracy_bar.png)
 
 ### Debater Consensus 
 
-![Accuracy Plot](images/accuracy.png)
+![Accuracy Plot](consensus_bar.png)
 
 ### Judge Confidence
 
-![Accuracy Plot](images/accuracy.png)
+![Accuracy Plot](judge_confidence_hist.png)
 
 
 ## Analysis
