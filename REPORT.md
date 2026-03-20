@@ -11,6 +11,30 @@ All the agents used the same LLM meta-llama/Llama-3.1-8B-Instruct model. The hyp
 ## Experiments
 The dataset used consisted of 100 yes/no commonsense QA from the StrategyQA dataset, as they require world knowledge and common sense reasoning over ambiguous scenarios. All three systems were evaluated on the same questions from the dataset. The accuracy results were 82% for direct QA, an identical 82% for self consistency, and 76% for debate + judge. Due to the paired per question outcome of the models, a Cochran’s Q test was performed and resulted in a p-value = 0.0025. This implies a significant difference between the three models. A pairwise McNemar test was performed for the same reason. For direct QA vs. self consistency the p-value was 1.0 implying no difference. In debate vs direct QA and debate vs self consistency, the p-values were both 0.03125 implying the debate + judge has a significant difference in accuracy. These were surprising results as it may have been expected that more LLM’s working together would be able to work together and achieve higher accuracy than baseline. The proportion of questions that reached consensus during the debate was calculated to be at 0.95. Bar plots of the accuracy, consensus, and judge confidence, along with tables of the results were generated using Python. Overall, this experiment showed that direct QA and self consistency performed better than debate + judge.
 
+## Table 1. Main Accuracy Results
+
+| system | num_examples | num_correct | accuracy |
+| --- | --- | --- | --- |
+| Direct QA | 100 | 82 | 0.82 |
+| Self-Consistency | 100 | 82 | 0.82 |
+| Debate + Judge | 100 | 76 | 0.76 |
+
+
+## Table 2. Significance Tests
+
+| test | comparison | statistic | df | p_value |
+| --- | --- | --- | --- | --- |
+| Cochran's Q | Direct QA vs Self-Consistency vs Debate + Judge | 12.0 | 2 | 0.002478752176666357 |
+| McNemar exact | Debate + Judge vs Direct QA | 6 |  | 0.03125 |
+| McNemar exact | Debate + Judge vs Self-Consistency | 6 |  | 0.03125 |
+| McNemar exact | Self-Consistency vs Direct QA | 0 |  | 1.0 |
+
+
+## Table 3. Debate Dynamics
+
+| total_questions | consensus_reached | stopped_early | consensus_rate | early_stop_rate |
+| --- | --- | --- | --- | --- |
+| 100 | 95 | 0 | 0.95 | 0.0 |
 
 ## Analysis
 Performing a qualitative analysis on several debate transcripts reveals what went well and what failed during the debate. Most transcripts tended to have early consensus thus had no debate. This is evidenced by the consensus rate of 0.95. They tended to have similar reasoning as well in spite of a higher temperature value. This was also found to be the case when both debaters incorrectly assume an answer. An example is found below where both debaters were independently correct:
